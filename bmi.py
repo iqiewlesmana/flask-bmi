@@ -1,6 +1,6 @@
 #check BMI
-weight=input('Please enter your wt in kg : ')
-height_in_cm=input('Please enter your height in cm :eg 172 as 5.9 : ')
+weight=input('Please enter your weight in (kg): ')
+height_in_cm=input('Please enter your height in (cm): ')
 #feet and inches to meter
 height_in_m=float(height_in_cm/100)
 #calculate BMI
