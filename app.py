@@ -1,5 +1,6 @@
 from flask import Flask,request,render_template,jsonify
 app = Flask(__name__)
+from app import views
 
 @app.route('/')
 def index():
@@ -23,3 +24,6 @@ def process():
   else :
    return jsonify({'output':'and your bmi is : '+ output})
   return jsonify({'error' : 'Missing data!'})
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)
